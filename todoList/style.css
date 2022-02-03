@@ -1,0 +1,79 @@
+html, body{
+    background-color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color:aliceblue;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+#taskInput{
+    border-radius: 10px;
+    border: none;
+    height: 2.5vh;
+    width: 20vh;
+    caret-color: transparent;
+    padding: 0 1vh;
+}
+button{
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: aliceblue;
+    border-style: solid;
+    height: 2.5vh;
+    width: 5vh;
+    color:aliceblue;
+
+}
+button:hover{
+    background-color: aliceblue;
+    border-radius: 10px;
+    border-color: aliceblue;
+    border-style: solid;
+    height: 2.5vh;
+    width: 5vh;
+    color:darkgray;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.title{
+    font-size: 3vw;
+    text-align: center;
+    font-weight: 500;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+.itemName {
+    margin: 0;
+    max-width: 15vh;
+    word-wrap: break-word
+}
+.itemIcons{
+    width: 12vh;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 2vw;
+}
+.itemIcons button{
+    margin-left: 0.3vw;
+}
+.itemContainer{
+    padding: 2vh 0;
+    width: 27vh;
+}
