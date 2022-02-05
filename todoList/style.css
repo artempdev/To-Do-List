@@ -9,31 +9,38 @@ input:focus, textarea:focus, select:focus{
     outline: none;
 }
 
+.add{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+.inputContainer{
+    text-align: center;
+}
+
 #taskInput{
-    border-radius: 10px;
+    border-radius: 20px;
     border: none;
-    height: 2.5vh;
-    width: 20vh;
+    height: 5vh;
+    width: 30vw;
     caret-color: transparent;
     padding: 0 1vh;
 }
 button{
     background-color: transparent;
-    border-radius: 10px;
+    border-radius: 20px;
     border-color: aliceblue;
     border-style: solid;
-    height: 2.5vh;
-    width: 5vh;
+    height: 5vh;
+    width: 10vw;
     color:aliceblue;
+    font-size: 18px;
 
 }
 button:hover{
     background-color: aliceblue;
-    border-radius: 10px;
     border-color: aliceblue;
-    border-style: solid;
-    height: 2.5vh;
-    width: 5vh;
     color:darkgray;
 
 }
@@ -42,13 +49,14 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;    
+    flex-direction: column;   
 }
 
 .title{
-    font-size: 3vw;
+    font-size: 6vw;
     text-align: center;
     font-weight: 500;
+    margin: 4vw 0;
 }
 
 .item{
@@ -57,23 +65,24 @@ button:hover{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1vh;
+    font-size: 1.5vw;
 }
 
 .itemName {
     margin: 0;
-    max-width: 15vh;
-    word-wrap: break-word
+    max-width: 27vw;
+    word-wrap: break-word;
 }
 .itemIcons{
-    width: 12vh;
+    width: 10vw;
     display: flex;
     justify-content: flex-end;
-    margin-left: 2vw;
+    padding-left: 1vw;
 }
 .itemIcons button{
     margin-left: 0.3vw;
 }
 .itemContainer{
     padding: 2vh 0;
-    width: 27vh;
+    width: 40vw;
 }
