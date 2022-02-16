@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 event.target.parentNode.parentNode.style.color = 'green';
                 setTimeout(() => event.target.parentNode.parentNode.remove(), 1000);
                 taskArr.splice(index, 1);
-                console.log(taskArr);
                 serializeTasks = JSON.stringify(taskArr);
                 localStorage.setItem('tasks', serializeTasks);
             });

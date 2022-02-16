@@ -86,3 +86,76 @@ button:hover{
     padding: 2vh 0;
     width: 40vw;
 }
+
+@media only screen and (max-width: 1024px) {
+    .title{
+        font-size: 6vw;
+        font-weight: 500;
+        margin: 4vw 0;
+    }    
+    #taskInput{
+        border-radius: 20px;
+        border: none;
+        height: 5vh;
+        width: 80vw;
+        caret-color: transparent;
+        padding: 0;
+        margin-bottom: 1vh;
+    }
+    .inputContainer button{
+        width: 80vw;
+    }
+    button{
+        border-radius: 20px;
+        height: 5vh;
+        width: 20vw;
+        font-size: 4vw;
+        border-width: 4px;
+    }
+    .item{
+        margin-bottom: 1vh;
+        font-size: 4vw;
+    }
+    .itemName {
+        margin: 0;
+        max-width: 57vw;
+    }
+    .itemIcons{
+        width: 20vw;
+        padding-left: 0.5vw;
+        flex-direction: column;
+    }
+    .itemIcons button{
+        margin-left: 0vw;
+        margin-bottom: 1vh;
+    }
+    .itemContainer{
+        padding: 2vh 0;
+        width: 80vw;
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1vh;
+        font-size: 5vw;
+    }
+    .itemName {
+        max-width: 80vw;
+    }
+    .itemIcons{
+        width: 80vw;
+        padding-left: 0.5vw;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .itemIcons button{
+        margin: 1vh 0 1vh 1vh;
+        width: 30vw;
+    }
+  }
