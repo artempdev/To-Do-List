@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let taskArr = [];
     let serializeTasks;
     console.log(JSON.parse(localStorage.getItem('tasks')));
-    taskArr = JSON.parse(localStorage.getItem('tasks'));
+    if(localStorage.getItem('tasks')){
+        taskArr = JSON.parse(localStorage.getItem('tasks'));
+    }
     console.log(taskArr);
     show();
     function inputLog() {
