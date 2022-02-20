@@ -1,2 +1,2 @@
 # To-Do-list
-my pet project 
+Pet project 
