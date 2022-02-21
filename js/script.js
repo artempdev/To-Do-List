@@ -46,8 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 event.preventDefault();
                 event.target.parentNode.parentNode.remove();
                 taskArr.splice(index, 1);
-                console.log(index);
-                console.log(taskArr);
+                inputLog();
                 show();
                 serializeTasks = JSON.stringify(taskArr);
                 localStorage.setItem('tasks', serializeTasks);
