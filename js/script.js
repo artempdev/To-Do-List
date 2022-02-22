@@ -13,8 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(taskArr);
     }
     function addTask(value) {
-        taskArr.push(value);
-        show();
+        if(value != '' && value != ' '){
+            taskArr.push(value);
+            show();
+        }
     }
     function show() {
         itemList.innerHTML = '';
