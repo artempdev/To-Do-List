@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let serializeTasks;
     if(localStorage.getItem('tasks')){
         taskArr = JSON.parse(localStorage.getItem('tasks'));
+    }else{
+        addTask('You will see your tasks here');
     }
     show();
     function inputLog() {
