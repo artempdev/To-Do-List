@@ -23,9 +23,9 @@ input:focus, textarea:focus, select:focus{
     border-radius: 20px;
     border: none;
     height: 5vh;
-    width: 30vw;
+    width: 29vw;
     caret-color: transparent;
-    padding: 0 1vh;
+    padding: 0 1vw;
 }
 button{
     background-color: transparent;
@@ -97,13 +97,14 @@ button:hover{
         border-radius: 20px;
         border: none;
         height: 5vh;
-        width: 80vw;
+        width: 78vw;
         caret-color: transparent;
-        padding: 0;
+        padding: 0 2vw;
         margin-bottom: 1vh;
     }
     .inputContainer button{
         width: 80vw;
+        margin-bottom: 1vh;
     }
     button{
         border-radius: 20px;
