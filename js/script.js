@@ -11,9 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
         addTask('You will see your tasks here');
     }
     show();
-    function inputLog() {
-        console.log(taskArr);
-    }
     function addTask(value) {
         if(value != '' && value != ' '){
             taskArr.push(value);
@@ -50,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 event.preventDefault();
                 event.target.parentNode.parentNode.remove();
                 taskArr.splice(index, 1);
-                inputLog();
+                console.log(taskArr);
                 show();
                 serializeTasks = JSON.stringify(taskArr);
                 localStorage.setItem('tasks', serializeTasks);
@@ -62,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addForm.addEventListener('submit', (event) => {
         event.preventDefault();
         addTask(taskInput.value);
-        inputLog();
+        console.log(taskArr);
         taskInput.value = '';
     });
 });
