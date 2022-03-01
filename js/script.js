@@ -3,20 +3,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const addForm = document.querySelector('form.add'),
         taskInput = document.querySelector('#taskInput'),
         itemList = document.querySelector('.itemList');
-    let taskArr = [];
-    let serializeTasks;
-    if(localStorage.getItem('tasks')){
+    let taskArr = [],serializeTasks;
+    if (localStorage.getItem('tasks')) {
         taskArr = JSON.parse(localStorage.getItem('tasks'));
-    }else{
+    } else {
         addTask('You will see your tasks here');
     }
     show();
+
     function addTask(value) {
-        if(value != '' && value != ' '){
+        if (value != '' && value != ' ') {
             taskArr.push(value);
             show();
         }
     }
+
     function show() {
         itemList.innerHTML = '';
         taskArr.forEach((element) => {
