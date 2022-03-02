@@ -32,11 +32,10 @@ button{
     border-radius: 20px;
     border-color: aliceblue;
     border-style: solid;
-    height: 5vh;
-    width: 10vw;
+    padding: 10px 15px;
     color:aliceblue;
     font-size: 18px;
-
+    transition: all 0.5s ease;
 }
 button:hover{
     background-color: aliceblue;
@@ -108,9 +107,8 @@ button:hover{
     }
     button{
         border-radius: 20px;
-        height: 5vh;
-        width: 20vw;
-        font-size: 4vw;
+        padding: 5px 10px;
+        font-size: 3vw;
         border-width: 4px;
     }
     .item{
