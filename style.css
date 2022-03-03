@@ -23,7 +23,7 @@ input:focus, textarea:focus, select:focus{
     border-radius: 20px;
     border: none;
     height: 5vh;
-    width: 29vw;
+    width: 35vw;
     caret-color: transparent;
     padding: 0 1vw;
 }
@@ -32,7 +32,7 @@ button{
     border-radius: 20px;
     border-color: aliceblue;
     border-style: solid;
-    padding: 10px 15px;
+    padding: 10px 20px;
     color:aliceblue;
     font-size: 18px;
     transition: all 0.5s ease;
@@ -73,7 +73,6 @@ button:hover{
     word-wrap: break-word;
 }
 .itemIcons{
-    width: 10vw;
     display: flex;
     justify-content: flex-end;
     padding-left: 1vw;
@@ -83,7 +82,7 @@ button:hover{
 }
 .itemContainer{
     padding: 2vh 0;
-    width: 40vw;
+    max-width: 900px;
 }
 
 @media only screen and (max-width: 1024px) {
