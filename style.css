@@ -149,13 +149,13 @@ button:hover{
         max-width: 80vw;
     }
     .itemIcons{
-        width: 80vw;
+        width: 100vw;
         padding-left: 0.5vw;
         flex-direction: row;
         justify-content: center;
     }
     .itemIcons button{
         margin: 1vh 0 1vh 1vh;
-        width: 30vw;
+        width: 40vw;
     }
   }
