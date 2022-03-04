@@ -1,25 +1,29 @@
-html, body{
+html,
+body {
     background-color: darkgray;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    color:aliceblue;
+    color: aliceblue;
 }
-input:focus, textarea:focus, select:focus{
+
+input:focus,
+textarea:focus,
+select:focus {
     outline: none;
 }
 
-.add{
+.add {
     justify-content: center;
     align-items: center;
-    flex-direction: column;  
+    flex-direction: column;
 }
 
-.inputContainer{
+.inputContainer {
     text-align: center;
 }
 
-#taskInput{
+#taskInput {
     border-radius: 20px;
     border: none;
     height: 5vh;
@@ -27,38 +31,40 @@ input:focus, textarea:focus, select:focus{
     caret-color: transparent;
     padding: 0 1vw;
 }
-button{
+
+button {
     background-color: transparent;
     border-radius: 20px;
     border-color: aliceblue;
     border-style: solid;
     padding: 10px 20px;
-    color:aliceblue;
+    color: aliceblue;
     font-size: 18px;
     transition: all 0.5s ease;
 }
-button:hover{
+
+button:hover {
     background-color: aliceblue;
     border-color: aliceblue;
-    color:darkgray;
+    color: darkgray;
 
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;   
+    flex-direction: column;
 }
 
-.title{
+.title {
     font-size: 6vw;
     text-align: center;
     font-weight: 500;
     margin: 4vw 0;
 }
 
-.item{
+.item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -69,29 +75,68 @@ button:hover{
 
 .itemName {
     margin: 0;
-    max-width: 27vw;
+    max-width: 29vw;
     word-wrap: break-word;
 }
-.itemIcons{
+
+.itemIcons {
     display: flex;
     justify-content: flex-end;
     padding-left: 1vw;
 }
-.itemIcons button{
+
+.itemIcons button {
     margin-left: 0.3vw;
 }
-.itemContainer{
+
+.itemContainer {
     padding: 2vh 0;
     max-width: 900px;
 }
 
+@media only screen and (min-width: 2560px) {
+    #taskInput {
+        border-radius: 50px;
+        height: 100px;
+        width: 1500px;
+        padding: 0 1vw;
+        font-size: 35px;
+    }
+
+    button {
+        background-color: transparent;
+        border-radius: 60px;
+        border-color: aliceblue;
+        border-style: solid;
+        border-width: 7px;
+        padding: 30px 80px;
+        color: aliceblue;
+        font-size: 50px;
+        transition: all 0.5s ease;
+    }
+
+    .title {
+        font-size: 200px;
+    }
+
+    .itemName {
+        font-size: 70px;
+        max-width: 1100px;
+    }
+    .itemContainer {
+        padding: 2vh 0;
+        max-width: none;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
-    .title{
+    .title {
         font-size: 6vw;
         font-weight: 500;
         margin: 4vw 0;
-    }    
-    #taskInput{
+    }
+
+    #taskInput {
         border-radius: 20px;
         border: none;
         height: 5vh;
@@ -100,42 +145,49 @@ button:hover{
         padding: 0 2vw;
         margin-bottom: 1vh;
     }
-    .inputContainer button{
+
+    .inputContainer button {
         width: 80vw;
         margin-bottom: 1vh;
     }
-    button{
+
+    button {
         border-radius: 20px;
         padding: 5px 10px;
         font-size: 3vw;
         border-width: 4px;
     }
-    .item{
+
+    .item {
         margin-bottom: 1vh;
         font-size: 4vw;
     }
+
     .itemName {
         margin: 0;
         max-width: 57vw;
     }
-    .itemIcons{
+
+    .itemIcons {
         width: 20vw;
         padding-left: 0.5vw;
         flex-direction: column;
     }
-    .itemIcons button{
+
+    .itemIcons button {
         margin-left: 0vw;
         margin-bottom: 1vh;
     }
-    .itemContainer{
+
+    .itemContainer {
         padding: 2vh 0;
         width: 80vw;
     }
-  }
+}
 
 
-  @media only screen and (max-width: 768px) {
-    .item{
+@media only screen and (max-width: 768px) {
+    .item {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -143,18 +195,21 @@ button:hover{
         margin: 1vh 0;
         font-size: 5vw;
     }
+
     .itemName {
         padding: 1vh 0;
         max-width: 80vw;
     }
-    .itemIcons{
+
+    .itemIcons {
         width: 100vw;
         padding-left: 0.5vw;
         flex-direction: row;
         justify-content: center;
     }
-    .itemIcons button{
+
+    .itemIcons button {
         margin: 1vh 0 1vh 1vh;
         width: 40vw;
     }
-  }
+}
