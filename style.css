@@ -187,6 +187,9 @@ button:hover {
 
 
 @media only screen and (max-width: 768px) {
+    .title {
+        font-size: 50px;
+    }
     .item {
         display: flex;
         flex-direction: column;
@@ -195,10 +198,22 @@ button:hover {
         margin: 1vh 0;
         font-size: 5vw;
     }
+    button {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    #taskInput {
+        font-size: 15px;
+        height: 50px;
+        width: 80%;
+        padding: 2px 15px;
+    }
 
     .itemName {
         padding: 1vh 0;
         max-width: 80vw;
+        font-size: 20px;
     }
 
     .itemIcons {
