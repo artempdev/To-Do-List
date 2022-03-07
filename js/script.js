@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 taskArr.splice(index, 1);
                 serializeTasks = JSON.stringify(taskArr);
                 localStorage.setItem('tasks', serializeTasks);
-                show();
+                setTimeout(show,1000);
             };
         });
         document.querySelectorAll('.deleteBtn').forEach((element, index) => {
