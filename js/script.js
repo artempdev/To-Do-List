@@ -63,14 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
             };
         });
         document.querySelectorAll('.deleteBtn').forEach((element, index) => {
-            console.log(element);
             element.onclick = (event) => {
                 event.target.parentNode.parentNode.remove();
                 taskArr.splice(index, 1);
                 serializeTasks = JSON.stringify(taskArr);
                 localStorage.setItem('tasks', serializeTasks);
-                console.log(index);
-                console.log(taskArr);
                 show();
             };
         });
@@ -78,7 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
     addForm.addEventListener('submit', (event) => {
         event.preventDefault();
         addTask(taskInput.value);
-        console.log(taskArr);
         taskInput.value = '';
     });
 });
