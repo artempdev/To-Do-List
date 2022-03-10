@@ -99,7 +99,7 @@ button:hover {
         border-radius: 50px;
         height: 100px;
         width: 1500px;
-        padding: 0 1vw;
+        padding: 0 10px;
         font-size: 35px;
     }
 
@@ -142,13 +142,13 @@ button:hover {
         height: 5vh;
         width: 78vw;
         caret-color: transparent;
-        padding: 0 2vw;
-        margin-bottom: 1vh;
+        padding: 0 10px;
+        margin-bottom: 10px;
     }
 
     .inputContainer button {
         width: 80vw;
-        margin-bottom: 1vh;
+        margin-bottom: 10px;
     }
 
     button {
@@ -159,8 +159,8 @@ button:hover {
     }
 
     .item {
-        margin-bottom: 1vh;
-        font-size: 4vw;
+        margin-bottom: 20px;
+        font-size: 30px;
     }
 
     .itemName {
@@ -176,7 +176,7 @@ button:hover {
 
     .itemIcons button {
         margin-left: 0vw;
-        margin-bottom: 1vh;
+        margin-bottom: 15px;
     }
 
     .itemContainer {
@@ -195,7 +195,7 @@ button:hover {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin: 1vh 0;
+        margin: 20px 0;
         font-size: 5vw;
     }
     button {
